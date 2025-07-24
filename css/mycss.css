@@ -70,3 +70,18 @@
     padding: 0 1rem;
   }
 }
+
+a.btn.btn-primary {
+  transition: all 0.3s ease !important;
+}
+
+a.btn.btn-primary:hover {
+  color: #ffffff !important;
+  transform: translateY(-1px) !important; 
+  text-decoration: none !important;
+}
+
+#repo-nav li a.active {
+  color: #1abc9c !important; /* warna hijau */
+  font-weight: bold;
+}

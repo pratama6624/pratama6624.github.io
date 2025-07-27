@@ -69,6 +69,17 @@
   #about-section .heading-section {
     padding: 0 1rem;
   }
+
+  @media (max-width: 600px) {
+  .screenshot-img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .screenshot-list {
+    flex-direction: column;
+  }
+}
 }
 
 a.btn.btn-primary {
@@ -84,4 +95,41 @@ a.btn.btn-primary:hover {
 #repo-nav li a.active {
   color: #1abc9c !important; /* warna hijau */
   font-weight: bold;
+}
+
+.language-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.language-list li {
+  background-color: #f1f1f1;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 13px;
+  color: #333;
+}
+
+.screenshot-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.screenshot-img {
+  width: 160px;         /* ukuran gambar lebih kecil */
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.screenshot-img:hover {
+  transform: scale(1.03);
 }

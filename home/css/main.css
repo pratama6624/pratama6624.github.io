@@ -1,0 +1,354 @@
+body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
+      color: #111;
+      overflow-x: hidden;
+    }
+
+    .sidebar {
+    background-color: #f7f8fc;
+    min-height: 100vh;
+    width: 280px;
+    position: fixed;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* biar atas-bawah rapi */
+    text-align: center;
+    }
+
+    .sidebar .top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    }
+
+    .sidebar img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    .sidebar h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0.3rem;
+      margin-bottom: 15px;
+    }
+
+    .sidebar p {
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.9rem;
+      color: #555;
+      letter-spacing: 0.5px;
+    }
+
+    .nav-links {
+      list-style: none;
+      padding: 0;
+      font-size: 0.75rem;
+      margin: 2rem 0;
+    }
+
+    .nav-links li {
+      margin: 10px 0;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover, .nav-links a.active {
+      color: #F26322;
+    }
+
+    .footer-text {
+      font-size: 0.8rem;
+      color: #888;
+    }
+
+    /* Hero Section */
+    .main-content {
+      margin-left: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 100vh;
+      padding: 3rem;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .hero-text h1 span {
+      display: block;
+    }
+
+    .hero-text p {
+      font-size: 0.95rem;
+      color: #555;
+      margin: 1.2rem 0;
+    }
+
+    .btn-outline-dark {
+      border-radius: 30px;
+      padding: 10px 25px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-outline-dark:hover {
+      background-color: #F26322;
+      color: #fff;
+      border-color: #F26322;
+    }
+
+    .hero-img img {
+      max-width: 420px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    @media (max-width: 992px) {
+      .main-content {
+        flex-direction: column;
+        margin-left: 0;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        min-height: auto;
+      }
+
+      .hero-img img {
+        margin-top: 2rem;
+        width: 100%;
+        max-width: 320px;
+      }
+    }
+
+
+.section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 80px;
+  box-sizing: border-box;
+}
+
+.philosophy {
+  background: #f8f9fa;
+}
+
+.philosophy-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.philosophy-image img {
+  width: 450px;
+  height: auto;
+  border-radius: 12px;
+  margin-left: 200px;
+  margin-top: -5px;
+  transform: rotate(3deg);
+}
+
+.philosophy-text {
+  flex: 1;
+  color: #2b2b2b;
+}
+
+.philosophy-text h1 {
+  color: #1a1a40;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.philosophy-text h3 {
+  margin-top: 20px;
+  color: #202056;
+  font-size: 1.3rem;
+}
+
+.philosophy-text p {
+  color: #555;
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
+
+/* ===== Stats Section ===== */
+.stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 80px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  background: #f0eefb;
+  padding: 15px 35px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.stat-box h2 {
+  font-size: 1.2rem;
+  color: #1a1a40;
+  margin-bottom: 10px;
+}
+
+.stat-box p {
+  color: #6b7280;
+  font-size: 0.8rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .philosophy-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .philosophy-image img {
+    width: 100%;
+  }
+
+  .section {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .stat-box {
+    width: 100%;
+  }
+}
+
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+  margin-bottom: 45px;
+  margin-left: -10px;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1c1c1e;
+  user-select: none;
+  letter-spacing: 0.3px;
+  transition: all 0.2s ease;
+}
+
+
+
+
+
+
+.service-section {
+  margin-left: 260px; /* biar gak nabrak sidebar */
+  min-height: 100vh;
+  padding: 80px 60px;
+  background-color: #f9f9fc;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  box-sizing: border-box;
+}
+
+.service-header {
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+.service-title {
+    margin-top: 30px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1d2b4f;
+}
+
+.service-subtitle {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  font-weight: 700;
+  color: #1d2b4f;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.service-card {
+  background: #f5f4fa;
+  border-radius: 12px;
+  padding: 40px 30px;
+  width: 320px;
+  text-align: left;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.service-card h2 {
+  color: #1e2b50;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.divider {
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #F26322;
+  margin-bottom: 20px;
+  border-radius: 1px;
+}
+
+.service-card p {
+  color: #5c6370;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  text-align: justify;
+}

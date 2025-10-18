@@ -23,12 +23,12 @@
             <h3>Pratama</h3>
             <p>Mobile iOS Developer<br>Indonesia</p>
             <ul class="nav-links">
-                <li><a href="#" class="active">HOME</a></li>
-                <li><a href="#">PHILOSOPHY</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">SKILLS</a></li>
-                <li><a href="#">PROJECTS</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#main" class="active">HOME</a></li>
+                <li><a href="#philosophy">PHILOSOPHY</a></li>
+                <li><a href="#skill">SKILLS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <!-- <li><a href="#">CONTACT</a></li> -->
+                <li><a href="#about">ABOUT</a></li>
             </ul>
         </div>
 
@@ -38,7 +38,7 @@
     </aside>
 
     <!-- Main Content -->
-    <main class="main-content">
+    <main class="main-content" id="main">
         <div class="hero-text">
             <h1>I am<br><span>a Developer</span></h1>
             <p>I'm a dedicated <span style="color: #F26322;">iOS Developer</span> passionate about crafting smooth and
@@ -109,26 +109,28 @@
         </section>
 
         <!-- Service Section -->
-        <section class="service-section">
+        <section class="service-section" id="skill">
             <div class="service-header">
-                <h2 class="service-title">What I Do</h2>
+                <h2 class="service-title">What i do</h2>
                 <h2 class="service-subtitle">Learning & Mastery</h2>
             </div>
 
             <div class="service-cards">
                 <div class="service-card">
-                    <h2>iOS Development</h2>
+                    <h2>Mobile iOS Development</h2>
                     <span class="divider"></span>
                     <p>
-                        Every day I dig into Swift and SwiftUI, exploring how to create clean and responsive UI. I also continue to delve deeper into the MVVM pattern, state management, and API.
+                        Building clean, responsive, and smooth apps with Swift & SwiftUI. Focused on real-world UX and
+                        solid architecture like MVVM + API integration.
                     </p>
                 </div>
 
                 <div class="service-card">
-                    <h2>Mobile Engineering</h2>
+                    <h2>Web Development</h2>
                     <span class="divider"></span>
                     <p>
-                        I really enjoy exploring the world of mobile development — not just iOS, but also cross-platform concepts. Basically, everything about how to make mobile apps feel alive.
+                        Crafting modern web apps and connecting every layer — from frontend to backend — to make things
+                        just work flawlessly.
                     </p>
                 </div>
 
@@ -136,8 +138,108 @@
                     <h2>Backend Development</h2>
                     <span class="divider"></span>
                     <p>
-                        The backend is the foundation, bro. I developed the API using <strong>Vapor</strong> (Swift framework), the goal is simple, clean, secure, and efficient backend that perfectly connects with my iOS apps.
+                        Developing scalable APIs with Vapor, ensuring everything runs fast, secure, and perfectly synced
+                        with my mobile apps.
                     </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2 class="section-title">Work showcase</h2>
+
+            <div class="projects-container">
+                <!-- Sidebar kiri -->
+                <div class="projects-sidebar">
+                    <ul>
+                        <li class="active">Arduino Object Detection</li>
+                        <li>Attendance Pro</li>
+                        <li>Makaroni Cuaks</li>
+                        <li>My Kidney</li>
+                        <li>My Weather</li>
+                        <li>N-Queen Solver iOS</li>
+                        <li>RFID MFRC522 Door Lock</li>
+                        <li>Sudoku Solver 9x9 iOS</li>
+                        <li>TicTacToe Game</li>
+                    </ul>
+                </div>
+
+                <!-- Konten kanan -->
+                <div class="projects-content">
+                    <div class="project-card active">
+                        <h3>Arduino Object Detection</h3>
+                        <p>
+                            Jarvis Lite is a macOS-based smart home project that combines Swift, AI, and Arduino.
+                            Designed for voice, face, and gesture control with verified security, this system enables
+                            automated
+                            home control through a custom app — not just for fun, but as a result of deep exploration of
+                            technology.
+                        </p>
+                        <div class="project-tags">
+                            <span>Swift</span>
+                            <span>C++</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Attendance Pro</h3>
+                        <p>
+                            AttendancePro is an HR app for managing employee attendance, scheduling, leave requests, and
+                            payroll integration — with real-time tracking, reports, and role-based access.
+                        </p>
+                        <div class="project-tags">
+                            <span>Swift</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="about-container">
+                <!-- Left: Profile Info -->
+                <div class="about-info">
+                    <h1 class="subtitle">About me</h1>
+                    <h5 class="bio">Focused on Apple ecosystem, AI and IoT.</h5>
+
+                    <table class="about-table">
+                        <tr>
+                            <th>Name:</th>
+                            <td>Kukuh Nur Pratama</td>
+                        </tr>
+                        <tr>
+                            <th>Date of birth:</th>
+                            <td>Mei 29, 1999</td>
+                        </tr>
+                        <tr>
+                            <th>Address:</th>
+                            <td>Ciganjur, Jakarta Selatan</td>
+                        </tr>
+                        <tr>
+                            <th>Postal code:</th>
+                            <td>12311</td>
+                        </tr>
+                        <tr>
+                            <th>Email:</th>
+                            <td>kukuh6624@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th>Telephone:</th>
+                            <td>+62 813-2991-6624</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Right: Contact Cards -->
+                <div class="right-card">
+                    <div class="card">
+                        <h3>Online Repository</h3>
+                        <ul>
+                            <li><a href="https://github.com/pratama6624" target="_blank">GitHub</a></li>
+                            <li><a href="https://gitlab.com/pratama6624" target="_blank">GitLab</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -146,6 +248,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="home/js/activemenu.js"></script>
 </body>
 
 </html>

@@ -19,7 +19,7 @@
     <!-- Sidebar -->
     <aside class="sidebar">
         <div class="top-section">
-            <img src="images/home/me.jpeg" alt="Pratama">
+            <img src="images/home/profile.png" alt="Pratama">
             <h3>Pratama</h3>
             <p>Mobile iOS Developer<br>Indonesia</p>
             <ul class="nav-links">
@@ -27,7 +27,6 @@
                 <li><a href="#philosophy">PHILOSOPHY</a></li>
                 <li><a href="#skill">SKILLS</a></li>
                 <li><a href="#projects">PROJECTS</a></li>
-                <!-- <li><a href="#">CONTACT</a></li> -->
                 <li><a href="#about">ABOUT</a></li>
             </ul>
         </div>
@@ -52,9 +51,13 @@
                 <span class="badge vapor">Vapor</span>
                 <span class="badge php">Backend</span>
                 <span class="badge arduino">Arduino</span>
+                <span class="badge esp">ESP 32</span>
+                <span class="badge php">PHP</span>
+                <span class="badge ci">Codeigniter</span>
+                <!-- <span class="badge arduino">Arduino</span> -->
             </div>
 
-            <a href="#" class="btn btn-outline-dark">View Portfolio</a>
+            <a href="#projects" class="btn btn-outline-dark">View Portfolio</a>
         </div>
     </main>
 
@@ -70,7 +73,7 @@
                 </div>
 
                 <div class="philosophy-text">
-                    <h1>Developer Philosophy</h1>
+                    <h1>Philosophy</h1>
                     <p>
                         I believe that technology isn't just about sophistication, but also about impact.
                         As an Apple Developer focused on the Apple ecosystem, I aim to provide solutions
@@ -146,54 +149,71 @@
         </section>
 
         <section id="projects" class="projects-section">
-            <h2 class="section-title">Work showcase</h2>
+            <div class="section-header">
+                <h1>Showcase</h1>
+                <!-- <h5>Check out some</h5> -->
+            </div>
 
-            <div class="projects-container">
-                <!-- Sidebar kiri -->
-                <div class="projects-sidebar">
-                    <ul>
-                        <li class="active">Arduino Object Detection</li>
-                        <li>Attendance Pro</li>
-                        <li>Makaroni Cuaks</li>
-                        <li>My Kidney</li>
-                        <li>My Weather</li>
-                        <li>N-Queen Solver iOS</li>
-                        <li>RFID MFRC522 Door Lock</li>
-                        <li>Sudoku Solver 9x9 iOS</li>
-                        <li>TicTacToe Game</li>
-                    </ul>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="images/home/mykidney.png" alt="My Kidney Project">
+                    <div class="project-info">
+                        <h4>My Kidney</h4>
+                        <p class="date">2024 • iOS & Expert System</p>
+                        <p class="desc">Expert system for early detection of kidney disease.</p>
+                    </div>
                 </div>
 
-                <!-- Konten kanan -->
-                <div class="projects-content">
-                    <div class="project-card active">
-                        <h3>Arduino Object Detection</h3>
-                        <p>
-                            Jarvis Lite is a macOS-based smart home project that combines Swift, AI, and Arduino.
-                            Designed for voice, face, and gesture control with verified security, this system enables
-                            automated
-                            home control through a custom app — not just for fun, but as a result of deep exploration of
-                            technology.
-                        </p>
-                        <div class="project-tags">
-                            <span>Swift</span>
-                            <span>C++</span>
-                            <span>Python</span>
-                        </div>
+                <div class="project-card">
+                    <img src="images/home/hrpro.png" alt="HR Pro Project">
+                    <div class="project-info">
+                        <h4>HR Pro</h4>
+                        <p class="date">2024 • Web & Backend</p>
+                        <p class="desc">Web-based employee attendance application.</p>
                     </div>
+                </div>
 
-                    <div class="project-card">
-                        <h3>Attendance Pro</h3>
-                        <p>
-                            AttendancePro is an HR app for managing employee attendance, scheduling, leave requests, and
-                            payroll integration — with real-time tracking, reports, and role-based access.
-                        </p>
-                        <div class="project-tags">
-                            <span>Swift</span>
-                        </div>
+                <div class="project-card">
+                    <img src="images/home/smarthome.png" alt="Smart Home Project">
+                    <div class="project-info">
+                        <h4>Smart Home</h4>
+                        <p class="date">2025 • iOS & IoT</p>
+                        <p class="desc">Control home devices using iPhone and Apple devices.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/home/mykidney.png" alt="My Kidney Project">
+                    <div class="project-info">
+                        <h4>My Kidney</h4>
+                        <p class="date">2024 • iOS & Vapor</p>
+                        <p class="desc">Sistem pakar deteksi dini penyakit ginjal.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/home/hrpro.png" alt="HR Pro Project">
+                    <div class="project-info">
+                        <h4>HR Pro</h4>
+                        <p class="date">2024 • Web & Backend</p>
+                        <p class="desc">Aplikasi absensi karyawan berbasis web.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/home/smarthome.png" alt="Smart Home Project">
+                    <div class="project-info">
+                        <h4>Smart Home</h4>
+                        <p class="date">2025 • IoT & iOS</p>
+                        <p class="desc">Kontrol perangkat rumah pakai iPhone & perangkat apple.</p>
                     </div>
                 </div>
             </div>
+
+            <div class="arrow-wrapper">
+                <button class="arrow-btn">More</button>
+            </div>
+
         </section>
 
         <section id="about" class="about-section">

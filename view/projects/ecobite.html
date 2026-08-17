@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>EcoBite iOS - Project Detail</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/css/projectdetail.css">
+    <script src="/js/projectdetail.js"></script>
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="/js/home.js"></script>
+</head>
+
+<body
+    class="bg-background text-on-background font-body-lg antialiased selection:bg-primary-container selection:text-white">
+    <!-- TopAppBar -->
+    <nav
+        class="fixed top-0 w-full z-50 bg-surface/85 dark:bg-inverse-surface/85 backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_4px_30px_rgba(0,0,0,0.05)]">
+        <div
+            class="flex justify-between items-center h-16 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+            <a href="../../Home.html" aria-label="Go back"
+                class="inline-flex items-center text-primary dark:text-primary-fixed-dim hover:opacity-80 transition-opacity active:scale-95 duration-200">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">arrow_back</span>
+            </a>
+            <div class="font-headline-sm text-headline-sm font-bold text-on-surface dark:text-inverse-on-surface">
+                One App Studio
+            </div>
+            <div class="flex gap-4">
+                <button aria-label="Share"
+                    class="text-on-surface-variant dark:text-on-secondary-fixed-dim hover:opacity-80 transition-opacity active:scale-95 duration-200">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">share</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <main
+        class="pt-[150px] pb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto flex flex-col gap-section-gap">
+        <!-- Hero Section -->
+        <section class="flex flex-col items-center text-center gap-8">
+            <div class="flex flex-col gap-4">
+                <h1
+                    class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface">
+                    EcoBite</h1>
+                <p class="pb-4 pt-4 font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                    EcoBite? "This app helps anyone understand what they consume every day and helps users make better
+                    consumption decisions in seconds."
+                </p>
+            </div>
+            <div
+                class="w-full max-w-4xl rounded-[40px] overflow-hidden border-[0.5px] border-outline-variant/50 shadow-2xl relative">
+                <img class="w-full h-auto object-cover block"
+                    data-alt="A highly detailed, photorealistic mockup of a modern iOS application displayed on a sleek, silver iPhone 14 Pro lying flat on a pristine white marble surface. The app interface shows a sophisticated personal finance dashboard with elegant line charts, minimalist expense categories, and soft blue accents. The lighting is bright, natural studio lighting creating soft reflections on the phone screen and a clean, light-mode minimalist aesthetic. Overall mood is professional, premium, and trustworthy."
+                    src="../../assets/ecobite/ecobitebanner.jpg">
+            </div>
+            <div class="flex flex-wrap justify-center gap-4 mt-4">
+                <a class="bg-primary-container text-white font-label-md text-label-md px-6 py-3 rounded-xl hover:opacity-90 transition-opacity flex items-center gap-2"
+                    href="#">
+                    View on App Store
+                </a>
+                <a href="https://github.com/pratama6624/EcoBite"
+                    class="bg-surface-variant text-primary font-label-md text-label-md px-6 py-3 rounded-xl hover:bg-surface-dim transition-colors flex items-center gap-2"
+                    href="#">
+                    GitHub Repository
+                </a>
+            </div>
+        </section>
+        <!-- Overview & Tech Stack (Bento Grid) -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-bento-gap">
+            <!-- Overview -->
+            <div class="glass-card p-6 md:col-span-2 flex flex-col gap-6">
+                <div>
+                    <h2 class="font-headline-sm text-headline-sm text-on-surface mb-2">The Goal</h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant">To empower users to make mindful,
+                        health-conscious consumption decisions in seconds by eliminating the friction of traditional
+                        dietary tracking. EcoBite aims to deliver instant, digestible insights into daily intake through
+                        an intuitive, high-performance native iOS experience paired with a robust Swift backend
+                        architecture.</p>
+                </div>
+                <div>
+                    <h2 class="font-headline-sm text-headline-sm text-on-surface mb-2">The Challenge</h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant">Engineering a frictionless logging
+                        system that translates complex nutritional data into clear metrics without overwhelming the user
+                        interface. The main technical hurdle was maintaining sub-second query responsiveness and smooth
+                        client-side rendering while synchronizing local data persistence with low-latency backend
+                        services.</p>
+                </div>
+            </div>
+            <!-- Tech Stack -->
+            <div class="glass-card p-6 flex flex-col gap-6">
+                <h2 class="font-headline-sm text-headline-sm text-on-surface">Tech Stack</h2>
+                <div class="flex flex-wrap gap-3">
+                    <span class="chip px-4 py-2 font-label-md text-label-md flex items-center gap-2">
+                        <span class="material-symbols-outlined text-[18px]">code</span> Swift
+                    </span>
+                    <span class="chip px-4 py-2 font-label-md text-label-md flex items-center gap-2">
+                        <span class="material-symbols-outlined text-[18px]">view_quilt</span> SwiftUI
+                    </span>
+                    <span class="chip px-4 py-2 font-label-md text-label-md flex items-center gap-2">
+                        <span class="material-symbols-outlined text-[18px]">database</span> Core Data
+                    </span>
+                    <span class="chip px-4 py-2 font-label-md text-label-md flex items-center gap-2">
+                        <span class="material-symbols-outlined text-[20px]">precision_manufacturing</span>
+                        <span class="ml-1">Gemini AI</span>
+                    </span>
+                    <span class="chip px-4 py-2 font-label-md text-label-md flex items-center gap-2">
+                        <svg class="text-[18px] h-5 w-5" viewBox="0 0 100 100" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="50" fill="#24A1DE" />
+                            <path
+                                d="M80.0833 22.9583L17.5 47.9167L39.7917 56.6667L64.5833 39.5833L46.25 58.75V76.25L55.4167 65L70.4167 76.25L80.0833 22.9583Z"
+                                fill="white" />
+                        </svg>
+                        <span class="ml-1">Telegram Bot Chat</span>
+                    </span>
+                    <span class="chip px-4 py-2 font-label-md text-label-md flex items-center gap-2">
+                        <svg class="text-[18px] h-5 w-5" viewBox="0 0 100 100" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.91 30.56L44.8 5.61C48.06 3.1 52.54 3.1 55.8 5.61L87.69 30.56V69.44L55.8 94.39C52.54 96.9 48.06 96.9 44.8 94.39L12.91 69.44V30.56Z"
+                                stroke="#FDC101" stroke-width="6" stroke-miterlimit="10" />
+                            <path d="M12.91 30.56L44.8 5.61" stroke="#FFAC02" stroke-width="6" stroke-miterlimit="10" />
+                            <path d="M87.69 30.56L55.8 5.61" stroke="#FF7E01" stroke-width="6" stroke-miterlimit="10" />
+                        </svg>
+                        <span class="ml-1">Firebase</span>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <!-- Key Features (Bento Grid) -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-bento-gap">
+            <div class="glass-card p-6 flex flex-col gap-4">
+                <div class="w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined text-2xl"
+                        style="font-variation-settings: 'FILL' 1;">monitoring</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface">Visual Nutrition Tracking</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant">Interactive charts built natively with
+                    SwiftUI Charts, helping users analyze daily dietary habits and view long-term consumption trends at
+                    a glance.</p>
+            </div>
+            <div class="glass-card p-6 flex flex-col gap-4">
+                <div class="w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined text-2xl"
+                        style="font-variation-settings: 'FILL' 1;">sync</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface">Real-Time Sync</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant">Seamless Vapor backend integration ensures
+                    that daily intake logs added on iPhone instantly reflect across all connected devices in real time.
+                </p>
+            </div>
+            <div class="glass-card p-6 flex flex-col gap-4">
+                <div class="w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined text-2xl"
+                        style="font-variation-settings: 'FILL' 1;">lock</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface">Secure Local Storage</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant">Consumption logs and personal metrics are
+                    encrypted and stored locally using Core Data, prioritizing user privacy and instant offline
+                    accessibility.</p>
+            </div>
+        </section>
+        <!-- Gallery -->
+        <section class="flex flex-col gap-8">
+            <h2 class="font-headline-md text-headline-md text-on-surface text-center">Gallery</h2>
+
+            <!-- Grid 3 Kolom -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-bento-gap">
+
+                <!-- Card 1 -->
+                <div
+                    class="glass-card overflow-hidden border-[0.5px] border-outline-variant/30 rounded-[24px] aspect-[9/20] w-full">
+                    <img class="w-full h-full object-cover object-top img-inset"
+                        data-alt="A clean, minimalist iOS application screenshot..."
+                        src="../../assets/ecobite/one.png" />
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="glass-card overflow-hidden border-[0.5px] border-outline-variant/30 rounded-[24px] aspect-[9/20] w-full">
+                    <img class="w-full h-full object-cover object-top img-inset"
+                        data-alt="A clean, minimalist iOS application screenshot..."
+                        src="../../assets/ecobite/two.png" />
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="glass-card overflow-hidden border-[0.5px] border-outline-variant/30 rounded-[24px] aspect-[9/20] w-full">
+                    <img class="w-full h-full object-cover object-top img-inset"
+                        data-alt="A clean, minimalist iOS application screenshot..."
+                        src="../../assets/ecobite/three.png" />
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                    class="glass-card overflow-hidden border-[0.5px] border-outline-variant/30 rounded-[24px] aspect-[9/20] w-full">
+                    <img class="w-full h-full object-cover object-top img-inset"
+                        data-alt="A clean, minimalist iOS application screenshot..."
+                        src="../../assets/ecobite/four.png" />
+                </div>
+
+            </div>
+        </section>
+        <section
+            class="reveal py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center"
+            id="contact">
+            <h2 class="reveal delay-100 font-headline-md text-headline-md text-on-surface mb-8">Let's Build Something
+                Great
+            </h2>
+            <p
+                class="reveal delay-200 font-body-md text-body-md text-on-surface-variant max-w-md mb-8 mx-auto text-center">
+                Have an idea, project, or opportunity in mind? Feel free to reach out and let's craft seamless
+                experiences
+                together.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <!-- Hire Me Button (Primary CTA di Paling Depan) -->
+                <a href="/hireme.html"
+                    class="reveal px-6 py-3 rounded-full flex items-center gap-2 bg-primary-container hover:bg-primary text-white transition-all shadow-md hover:shadow-lg active:scale-95"
+                    href="mailto:email@kamu.com?subject=Project%20Inquiry">
+                    <span class="material-symbols-outlined text-white" data-icon="handshake">handshake</span>
+                    <span class="font-label-md text-label-md font-semibold text-white">Hire Me</span>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/pratama6624"
+                    class="reveal glass-panel px-6 py-3 rounded-full flex items-center gap-2 hover:bg-surface-container transition-colors"
+                    href="#">
+                    <span class="material-symbols-outlined text-on-surface" data-icon="code">code</span>
+                    <span class="font-label-md text-label-md text-on-surface">GitHub</span>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/kukuhnurpratama-iosdeveloper"
+                    class="reveal glass-panel px-6 py-3 rounded-full flex items-center gap-2 hover:bg-surface-container transition-colors"
+                    href="#">
+                    <span class="material-symbols-outlined text-on-surface" data-icon="work">work</span>
+                    <span class="font-label-md text-label-md text-on-surface">LinkedIn</span>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:scyoung6624@gmail.com"
+                    class="reveal glass-panel px-6 py-3 rounded-full flex items-center gap-2 hover:bg-surface-container transition-colors"
+                    href="#">
+                    <span class="material-symbols-outlined text-on-surface" data-icon="mail">mail</span>
+                    <span class="font-label-md text-label-md text-on-surface">Email</span>
+                </a>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/6287823019956?text=Halo%20Pratama,%20saya%20lihat%20portofolio%20kamu%20dan%20tertarik%20untuk%20hire/diskusi%20proyek."
+                    class="reveal glass-panel px-6 py-3 rounded-full flex items-center gap-2 hover:bg-surface-container transition-colors"
+                    href="#">
+                    <svg class="w-5 h-5 fill-current text-on-surface" viewBox="0 0 24 24">
+                        <path
+                            d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.199 1.624zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                    </svg>
+                    <span class="font-label-md text-label-md text-on-surface">WhatsApp</span>
+                </a>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="w-full max-w-container-max mx-auto bg-transparent border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center py-14 px-margin-desktop mt-3">
+        <ul class="flex gap-6 mb-4 md:mb-0">
+            <li>
+                <span class="text-secondary opacity-80 font-body-md text-body-md">
+                    "Keep Building. Empowering Tech Ecosystems."
+                </span>
+            </li>
+        </ul>
+        <div class="text-secondary font-body-md text-body-md">© 2026 Pratama.</div>
+    </footer>
+</body>
+
+</html>

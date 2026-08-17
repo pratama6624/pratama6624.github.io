@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Work - DevPortfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="/css/project.css">
+    <script src="/js/project.js"></script>
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="/js/home.js"></script>
+</head>
+
+<body class="font-body-md text-body-md text-on-surface antialiased pt-32 pb-16">
+    <!-- TopNavBar -->
+    <nav
+        class="fixed top-0 w-full z-50 bg-surface/85 dark:bg-inverse-surface/85 backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_4px_30px_rgba(0,0,0,0.05)]">
+        <div
+            class="relative flex justify-between items-center h-16 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+            <!-- Kiri -->
+            <a href="Home.html" aria-label="Go back"
+                class="inline-flex items-center text-primary dark:text-primary-fixed-dim hover:opacity-80 transition-opacity active:scale-95 duration-200">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">arrow_back</span>
+            </a>
+
+            <!-- Tengah (Dipaksa ke Tengah Layar) -->
+            <div
+                class="absolute left-1/2 -translate-x-1/2 font-headline-sm text-headline-sm font-bold text-on-surface dark:text-inverse-on-surface whitespace-nowrap">
+                One App Studio
+            </div>
+
+            <!-- Kanan -->
+            <div
+                class="flex items-center gap-2 bg-surface-container rounded-full p-1 border border-outline-variant/30 text-xs font-semibold">
+                <button id="btn-en" onclick="setLanguage('en')"
+                    class="px-3 py-1 rounded-full bg-primary-container text-white transition-all">EN</button>
+                <button id="btn-id" onclick="setLanguage('id')"
+                    class="px-3 py-1 rounded-full text-on-surface-variant hover:text-on-surface transition-all">ID</button>
+            </div>
+        </div>
+    </nav>
+    <!-- Projects Gallery -->
+    <section class="reveal py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="stack">
+        <h2 class="reveal delay-100 font-headline-md text-headline-md text-on-surface mb-5 text-center">Projects</h2>
+        <p
+            class="reveal delay-200 font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto text-center mb-16">
+            A curated collection of projects blending native Apple craftsmanship with modern fullstack web architecture.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-bento-gap">
+            <!-- Project 1 -->
+            <a href="/view/projects/ecobite.html" class="block group h-full">
+                <div
+                    class="reveal delay-300 glass-panel rounded-[24px] overflow-hidden group-hover:scale-[1.01] transition-transform duration-300 flex flex-col h-full">
+                    <!-- Wrapper Gambar -->
+                    <div class="w-full h-full flex items-center justify-center bg-[#F5F5F7]/50 overflow-hidden">
+                        <img alt="Project Thumbnail"
+                            class="max-w-full max-h-full object-contain rounded-xl shadow-md group-hover:scale-105 transition-transform duration-700"
+                            data-alt="A clean, minimalist 3D rendering of a modern iOS application interface floating over a smooth, light gray surface. The app shows financial data with elegant charts and typography. High-key studio lighting, premium tech aesthetic."
+                            src="/assets/ecobite.png" />
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="font-headline-sm text-headline-sm text-on-surface">EcoBite</h3>
+                            <!-- Tautan dekoratif internal diganti jadi span agar tidak terjadi nested <a> tag -->
+                            <span
+                                class="text-primary-container group-hover:text-primary transition-colors flex items-center gap-1">
+                                <span class="font-label-sm text-label-sm">App Store</span>
+                                <span class="material-symbols-outlined text-[16px]"
+                                    data-icon="open_in_new">open_in_new</span>
+                            </span>
+                        </div>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">EcoBite? "This app
+                            helps anyone understand what they consume every day and helps users make better consumption
+                            decisions in seconds."</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="bg-surface-variant text-on-surface px-3 py-1 rounded-full font-label-sm text-label-sm">SwiftUI</span>
+                            <span
+                                class="bg-surface-variant text-on-surface px-3 py-1 rounded-full font-label-sm text-label-sm">Vapor</span>
+                            <span
+                                class="bg-surface-variant text-on-surface px-3 py-1 rounded-full font-label-sm text-label-sm">Core
+                                Data</span>
+                            <span
+                                class="bg-surface-variant text-on-surface px-3 py-1 rounded-full font-label-sm text-label-sm">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- Project 2 -->
+            <a href="/view/projects/mykidney.html" class="block group h-full">
+                <div
+                    class="reveal delay-300 glass-panel rounded-[24px] overflow-hidden group-hover:scale-[1.01] transition-transform duration-300 flex flex-col h-full">
+                    <!-- Wrapper Gambar -->
+                    <div class="w-full h-full flex items-center justify-center bg-[#F5F5F7]/50 overflow-hidden">
+                        <img alt="Project Thumbnail"
+                            class="max-w-full max-h-full object-contain rounded-xl shadow-md group-hover:scale-105 transition-transform duration-700"
+                            data-alt="A clean, minimalist 3D rendering of a modern iOS application interface floating over a smooth, light gray surface. The app shows financial data with elegant charts and typography. High-key studio lighting, premium tech aesthetic."
+                            src="/assets/mykidney.png" />
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="font-headline-sm text-headline-sm text-on-surface">My Kidney</h3>
+                            <!-- Tautan dekoratif internal diganti jadi span agar tidak terjadi nested <a> tag -->
+                            <span
+                                class="text-primary-container group-hover:text-primary transition-colors flex items-center gap-1">
+                                <span class="font-label-sm text-label-sm">App Store</span>
+                                <span class="material-symbols-outlined text-[16px]"
+                                    data-icon="open_in_new">open_in_new</span>
+                            </span>
+                        </div>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">My Kidney? "This project
+                        aims to develop an expert system for diagnosing kidney disease using iOS, Swift, and Google
+                        Firebase."</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="bg-surface-variant text-on-surface px-3 py-1 rounded-full font-label-sm text-label-sm">SwiftUI</span>
+                            <span
+                                class="bg-surface-variant text-on-surface px-3 py-1 rounded-full font-label-sm text-label-sm">Vapor</span>
+                            <span
+                                class="bg-surface-variant text-on-surface px-3 py-1 rounded-full font-label-sm text-label-sm">Core
+                                Data</span>
+                            <span
+                                class="bg-surface-variant text-on-surface px-3 py-1 rounded-full font-label-sm text-label-sm">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- Project 3 -->
+            <div
+                class="reveal delay-500 glass-panel rounded-[24px] overflow-hidden group hover:scale-[1.01] transition-transform duration-300 flex flex-col h-full">
+                <div class="w-full h-full flex items-center justify-center bg-[#F5F5F7]/50 overflow-hidden">
+                    <img alt="Project Thumbnail"
+                        class="max-w-full max-h-full object-contain rounded-xl shadow-md group-hover:scale-105 transition-transform duration-700"
+                        data-alt="A clean, minimalist 3D rendering of a modern iOS application interface floating over a smooth, light gray surface. The app shows financial data with elegant charts and typography. High-key studio lighting, premium tech aesthetic."
+                        src="/assets/fakeibox.png" />
+                </div>
+                <div class="p-8 flex flex-col flex-grow">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="font-headline-sm text-headline-sm text-on-surface">Fake Ibox</h3>
+                        <a class="text-primary-container hover:text-primary transition-colors flex items-center gap-1"
+                            href="#">
+                            <span class="font-label-sm text-label-sm">App Store</span>
+                            <span class="material-symbols-outlined text-[16px]"
+                                data-icon="open_in_new">open_in_new</span>
+                        </a>
+                    </div>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">iBox (Mobile) — UI
+                        Concept & iOS Prototype Design mobile storefront concept for iBox: home, product catalog, and
+                        shopping cart with a focus on simple UX, fast navigation, and clean visuals.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="bg-surface-variant text-on-surface px-3 py-1 rounded-full font-label-sm text-label-sm">SwiftUI</span>
+                        <span
+                            class="bg-surface-variant text-on-surface px-3 py-1 rounded-full font-label-sm text-label-sm">Vapor</span>
+                        <span
+                            class="bg-surface-variant text-on-surface px-3 py-1 rounded-full font-label-sm text-label-sm">Core
+                            Data</span>
+                        <span
+                            class="bg-surface-variant text-on-surface px-3 py-1 rounded-full font-label-sm text-label-sm">Firebase</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 4 -->
+            <div
+                class="reveal delay-600 glass-panel rounded-[24px] overflow-hidden group hover:scale-[1.01] transition-transform duration-300 flex flex-col h-full">
+                <div class="w-full h-full flex items-center justify-center bg-[#F5F5F7]/50 overflow-hidden">
+                    <img alt="Project Thumbnail"
+                        class="max-w-full max-h-full object-contain rounded-xl shadow-md group-hover:scale-105 transition-transform duration-700"
+                        data-alt="A clean, minimalist 3D rendering of a modern iOS application interface floating over a smooth, light gray surface. The app shows financial data with elegant charts and typography. High-key studio lighting, premium tech aesthetic."
+                        src="/assets/atp.png" />
+                </div>
+                <div class="p-8 flex flex-col flex-grow">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="font-headline-sm text-headline-sm text-on-surface">AttendancePro</h3>
+                        <a class="text-primary-container hover:text-primary transition-colors flex items-center gap-1"
+                            href="#">
+                            <span class="font-label-sm text-label-sm">App Store</span>
+                            <span class="material-symbols-outlined text-[16px]"
+                                data-icon="open_in_new">open_in_new</span>
+                        </a>
+                    </div>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">AttendancePro is an HR
+                        app for managing employee attendance, scheduling, leave requests, and payroll integration — with
+                        real-time tracking, reports, and role-based access for employees, managers, and admins.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="bg-surface-variant text-on-surface px-3 py-1 rounded-full font-label-sm text-label-sm">SwiftUI</span>
+                        <span
+                            class="bg-surface-variant text-on-surface px-3 py-1 rounded-full font-label-sm text-label-sm">Vapor</span>
+                        <span
+                            class="bg-surface-variant text-on-surface px-3 py-1 rounded-full font-label-sm text-label-sm">Core
+                            Data</span>
+                        <span
+                            class="bg-surface-variant text-on-surface px-3 py-1 rounded-full font-label-sm text-label-sm">Firebase</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="reveal py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center"
+        id="contact">
+        <h2 class="reveal delay-100 font-headline-md text-headline-md text-on-surface mb-8">Let's Build Something Great
+        </h2>
+        <p class="reveal delay-200 font-body-md text-body-md text-on-surface-variant max-w-md mb-8 mx-auto text-center">
+            Have an idea, project, or opportunity in mind? Feel free to reach out and let's craft seamless experiences
+            together.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <!-- Hire Me Button (Primary CTA di Paling Depan) -->
+            <a href="/hireme.html" class="reveal px-6 py-3 rounded-full flex items-center gap-2 bg-primary-container hover:bg-primary text-white transition-all shadow-md hover:shadow-lg active:scale-95"
+                href="mailto:email@kamu.com?subject=Project%20Inquiry">
+                <span class="material-symbols-outlined text-white" data-icon="handshake">handshake</span>
+                <span class="font-label-md text-label-md font-semibold text-white">Hire Me</span>
+            </a>
+
+            <!-- GitHub -->
+            <a class="reveal glass-panel px-6 py-3 rounded-full flex items-center gap-2 hover:bg-surface-container transition-colors"
+                href="#">
+                <span class="material-symbols-outlined text-on-surface" data-icon="code">code</span>
+                <span class="font-label-md text-label-md text-on-surface">GitHub</span>
+            </a>
+
+            <!-- LinkedIn -->
+            <a class="reveal glass-panel px-6 py-3 rounded-full flex items-center gap-2 hover:bg-surface-container transition-colors"
+                href="#">
+                <span class="material-symbols-outlined text-on-surface" data-icon="work">work</span>
+                <span class="font-label-md text-label-md text-on-surface">LinkedIn</span>
+            </a>
+
+            <!-- Email -->
+            <a class="reveal glass-panel px-6 py-3 rounded-full flex items-center gap-2 hover:bg-surface-container transition-colors"
+                href="#">
+                <span class="material-symbols-outlined text-on-surface" data-icon="mail">mail</span>
+                <span class="font-label-md text-label-md text-on-surface">Email</span>
+            </a>
+
+            <!-- WhatsApp -->
+            <a class="reveal glass-panel px-6 py-3 rounded-full flex items-center gap-2 hover:bg-surface-container transition-colors"
+                href="#">
+                <svg class="w-5 h-5 fill-current text-on-surface" viewBox="0 0 24 24">
+                    <path
+                        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.199 1.624zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                </svg>
+                <span class="font-label-md text-label-md text-on-surface">WhatsApp</span>
+            </a>
+        </div>
+    </section>
+    </main>
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>

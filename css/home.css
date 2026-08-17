@@ -1,0 +1,62 @@
+        /* Keadaan awal sebelum elemen terlihat */
+        .reveal {
+            opacity: 0;
+            transform: translate3d(0, 30px, 0);
+            /* Easing ala Apple UI (cubic-bezier 0.16, 1, 0.3, 1) dengan durasi 1.2s */
+            transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+
+        /* Jeda antar elemen yang sangat halus */
+        .delay-100 {
+            transition-delay: 100ms;
+        }
+
+        .delay-200 {
+            transition-delay: 200ms;
+        }
+
+        .delay-300 {
+            transition-delay: 300ms;
+        }
+
+        .delay-400 {
+            transition-delay: 400ms;
+        }
+
+        .delay-500 {
+            transition-delay: 500ms;
+        }
+
+        .delay-600 {
+            transition-delay: 600ms;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .fill-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+
+        .glass-panel {
+            background-color: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(229, 229, 234, 0.5);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .bg-f5f5f7 {
+            background-color: #F5F5F7;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }

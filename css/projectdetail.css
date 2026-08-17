@@ -1,0 +1,24 @@
+.glass-card {
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid #E5E5EA;
+    border-radius: 24px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+}
+
+.chip {
+    background-color: #E5E5EA;
+    color: #1D1D1F;
+    border-radius: 9999px;
+}
+
+.img-inset {
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}

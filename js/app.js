@@ -40,3 +40,43 @@ document.addEventListener('DOMContentLoaded', async () => {
         window.initializeScrollAnimations();
     }
 });
+
+function setLanguage(lang) {
+    // 1. Simpan pilihan bahasa ke localStorage
+    localStorage.setItem('selectedLanguage', lang);
+
+    // 2. Ambil semua elemen yang memiliki atribut data-en dan data-id
+    const elements = document.querySelectorAll('[data-en][data-id]');
+
+    elements.forEach(el => {
+        if (lang === 'id') {
+            el.textContent = el.getAttribute('data-id');
+        } else {
+            el.textContent = el.getAttribute('data-en');
+        }
+    });
+
+    // 3. Update status tombol aktif (EN / ID)
+    const btnEn = document.getElementById('btn-en');
+    const btnId = document.getElementById('btn-id');
+
+    if (btnEn && btnId) {
+        if (lang === 'id') {
+            btnId.classList.add('bg-primary-container', 'text-white');
+            btnId.classList.remove('text-on-surface-variant');
+            btnEn.classList.remove('bg-primary-container', 'text-white');
+            btnEn.classList.add('text-on-surface-variant');
+        } else {
+            btnEn.classList.add('bg-primary-container', 'text-white');
+            btnEn.classList.remove('text-on-surface-variant');
+            btnId.classList.remove('bg-primary-container', 'text-white');
+            btnId.classList.add('text-on-surface-variant');
+        }
+    }
+}
+
+// 4. Jalankan otomatis saat halaman selesai dimuat
+document.addEventListener('DOMContentLoaded', () => {
+    const savedLang = localStorage.getItem('selectedLanguage') || 'en';
+    setLanguage(savedLang);
+});

@@ -149,3 +149,12 @@ function typeEffect() {
 }
 
 document.addEventListener("DOMContentLoaded", typeEffect);
+
+const titles = {
+    en: "Crafting High-Performance iOS & Web Apps.",
+    id: "Membangun Aplikasi iOS & Web Berkinerja Tinggi."
+};
+
+// Ambil bahasa yang tersimpan saat ini
+const currentLang = localStorage.getItem('selectedLanguage') || 'en';
+const textToType = titles[currentLang];

@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Laundry Rose - Solusi Cuci Bersih &amp; Wangi</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#d9e3f6",
+                        "on-secondary-fixed-variant": "#693168",
+                        "surface-dim": "#d0dbed",
+                        "surface-tint": "#874c67",
+                        "surface": "#f8f9ff",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#191c1e",
+                        "on-secondary-container": "#7c437a",
+                        "on-primary-fixed-variant": "#6c354f",
+                        "secondary": "#844981",
+                        "on-primary-fixed": "#370923",
+                        "on-surface-variant": "#514348",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed-dim": "#f6afef",
+                        "primary-fixed": "#ffd8e6",
+                        "primary-fixed-dim": "#fbb1d1",
+                        "on-secondary-fixed": "#370139",
+                        "on-tertiary-fixed-variant": "#444749",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#ffb8f8",
+                        "surface-container-low": "#eff4ff",
+                        "on-background": "#121c2a",
+                        "primary": "#874c67",
+                        "outline-variant": "#d5c2c7",
+                        "inverse-surface": "#27313f",
+                        "background": "#f8f9ff",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#121c2a",
+                        "surface-container": "#e6eeff",
+                        "surface-container-high": "#dee9fc",
+                        "surface-variant": "#d9e3f6",
+                        "tertiary-container": "#b3b5b7",
+                        "on-tertiary-container": "#444749",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#c5c6c8",
+                        "tertiary": "#5c5f60",
+                        "inverse-primary": "#fbb1d1",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed": "#ffd6f8",
+                        "tertiary-fixed": "#e1e2e4",
+                        "primary-container": "#e8a0bf",
+                        "on-primary-container": "#6b344f",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-on-surface": "#eaf1ff",
+                        "error": "#ba1a1a",
+                        "surface-bright": "#f8f9ff",
+                        "outline": "#837378",
+                        "brand-plum": "#4A154B",
+                        "brand-rose": "#E8A0BF"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "lg": "24px",
+                        "xl": "40px",
+                        "container-margin": "20px",
+                        "gutter": "16px",
+                        "base": "8px",
+                        "xs": "4px",
+                        "md": "16px",
+                        "sm": "12px",
+                        "xxl": "80px",
+                        "xxxl": "120px"
+                    },
+                    "fontFamily": {
+                        "button-text": [
+                            "Inter"
+                        ],
+                        "body-lg": [
+                            "Inter"
+                        ],
+                        "body-sm": [
+                            "Inter"
+                        ],
+                        "label-bold": [
+                            "Inter"
+                        ],
+                        "headline-lg": [
+                            "Inter"
+                        ],
+                        "headline-lg-mobile": [
+                            "Inter"
+                        ],
+                        "headline-md": [
+                            "Inter"
+                        ]
+                    },
+                    "fontSize": {
+                        "button-text": [
+                            "16px",
+                            {
+                                "lineHeight": "1",
+                                "fontWeight": "600"
+                            }
+                        ],
+                        "body-lg": [
+                            "16px",
+                            {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "body-sm": [
+                            "14px",
+                            {
+                                "lineHeight": "1.5",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "label-bold": [
+                            "12px",
+                            {
+                                "lineHeight": "1",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "600"
+                            }
+                        ],
+                        "headline-lg": [
+                            "48px",
+                            {
+                                "lineHeight": "1.1",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                            }
+                        ],
+                        "headline-lg-mobile": [
+                            "32px",
+                            {
+                                "lineHeight": "1.2",
+                                "fontWeight": "700"
+                            }
+                        ],
+                        "headline-md": [
+                            "24px",
+                            {
+                                "lineHeight": "1.3",
+                                "fontWeight": "600"
+                            }
+                        ]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .icon-fill {
+            font-variation-settings: 'FILL' 1;
+        }
+
+        .soft-shadow {
+            box-shadow: 0px 10px 20px rgba(74, 21, 75, 0.08);
+        }
+    </style>
+</head>
+
+<body class="bg-surface text-on-surface antialiased font-body-lg">
+    <!-- Header / TopNavBar (Based on JSON) -->
+    <header class="sticky top-0 z-50 bg-surface dark:bg-surface-dim full-width w-full transition-shadow duration-300"
+        id="main-header">
+        <nav class="flex justify-between items-center w-full px-container-margin py-md max-w-7xl mx-auto">
+            <div class="flex items-center gap-sm cursor-pointer">
+                <img alt="Laundry Rose Logo" class="h-10 w-10 object-contain rounded-full border border-surface-variant"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYhNNAt2iWzgaMXFzFtddGKrXS5VzyChImhU50jDKLTmvtUBbaUb9XBW1hw0cuTzqe56jgA-XmzMZ_9BiypLsniAqop32GX81mTU6IVkcVo9t0FNph5AK1_UpPU2PHPL_lhfI-DP9Mac8DZCoQPIBDEWtzIfCoUzpqCWU_On-Gka5D9NtQdf23AQWOUY3-B3uUkx1mYZsUXGh3dVVA8l8UtMPmNg-0hebYyNDut109iN-wcszyqJkpRQ" />
+                <span
+                    class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim">Laundry
+                    Rose</span>
+            </div>
+            <div class="hidden md:flex items-center gap-lg">
+                <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors duration-200 font-label-bold text-label-bold"
+                    href="#layanan">Layanan &amp; Harga</a>
+                <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors duration-200 font-label-bold text-label-bold"
+                    href="#area">Area Jemput</a>
+                <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors duration-200 font-label-bold text-label-bold"
+                    href="#status">Cek Status</a>
+                <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors duration-200 font-label-bold text-label-bold"
+                    href="#kontak">Kontak</a>
+            </div>
+            <button
+                class="hidden md:flex items-center gap-2 bg-brand-plum text-white px-6 py-3 rounded-full font-button-text text-button-text hover:bg-opacity-90 transition-all hover:-translate-y-0.5 soft-shadow">
+                <span class="material-symbols-outlined icon-fill" style="font-size: 18px;">local_shipping</span>
+                Pesan Antar-Jemput
+            </button>
+            <button class="md:hidden text-primary p-2">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="relative pt-xl pb-xxl px-container-margin overflow-hidden">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-xxl items-center">
+            <div class="flex flex-col gap-lg z-10">
+                <div
+                    class="inline-flex items-center gap-2 bg-surface-container-low px-4 py-2 rounded-full w-max border border-surface-variant">
+                    <span class="w-2 h-2 rounded-full bg-brand-rose"></span>
+                    <span class="font-label-bold text-label-bold text-brand-plum tracking-wider uppercase">Buka Hari Ini
+                        08:00 - 20:00</span>
+                </div>
+                <h1
+                    class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface">
+                    Cucian Bersih, Rapi &amp; <span class="text-primary relative inline-block">Wangi<svg
+                            class="absolute w-full h-3 -bottom-1 left-0 text-brand-rose/40" preserveaspectratio="none"
+                            viewbox="0 0 100 10">
+                            <path d="M0 5 Q 50 10 100 5" fill="none" stroke="currentColor" stroke-width="4"></path>
+                        </svg></span> Tanpa Repot
+                </h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                    Layanan cuci kiloan, satuan, dan dry cleaning terpercaya dengan fasilitas antar-jemput gratis untuk
+                    area Serpong Utara. Kami menjaga kualitas pakaian Anda seperti milik sendiri.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 mt-4">
+                    <a class="inline-flex justify-center items-center gap-2 bg-brand-plum text-white px-8 py-4 rounded-full font-button-text text-button-text hover:bg-opacity-95 transition-all hover:-translate-y-1 soft-shadow"
+                        href="#pesan">
+                        <svg aria-hidden="true" class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z">
+                            </path>
+                        </svg>
+                        Pesan Antar-Jemput
+                    </a>
+                    <a class="inline-flex justify-center items-center gap-2 bg-transparent text-brand-plum border border-brand-plum px-8 py-4 rounded-full font-button-text text-button-text hover:bg-surface-container-low transition-all"
+                        href="#layanan">
+                        Lihat Daftar Harga
+                    </a>
+                </div>
+                <div class="flex items-center gap-4 mt-6">
+                    <div class="flex -space-x-3">
+                        <img class="w-10 h-10 rounded-full border-2 border-white object-cover"
+                            data-alt="A portrait photo of a smiling Indonesian woman customer looking highly satisfied with fresh laundry. Bright modern lighting, shallow depth of field focusing on her face, soft pastel color palette. Professional high-end photography."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6egVbCzfKRbpOFgGDfZX4lwATzWq1E6_8_zLjwdf8qhUq9Uc16Pbcvor5r_9dgerejWR1p7vah-R90S2RKINnRZG8V2yYYJo6NaFfbxoLjob1TVa8gXjsQhSpZcJaGvvEpCwvnmzWPfGfrkQesa-WbflicrJLLJ6gShoFgnnvPKV6ZJpkqeh7EkINZedHpQsc0ocFs6IfB7It6NdGfdLh2AERm1PkvXMr3XKK2SRu0M1HBStxPsLpFw" />
+                        <img class="w-10 h-10 rounded-full border-2 border-white object-cover"
+                            data-alt="A portrait photo of an Indonesian male customer holding neatly folded shirts, smiling. Bright modern lighting, clean background, soft warm lighting. High-end lifestyle photography."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrbRFBVsz8rS70ZXgwRZg58Ol_WhCNYOyHLFAtf3PWbocGm-XgwN2cqPj75qQ0miEB53QTmfdyqEjFGiFrNLWYV8xoJEfC9--n4rjGzcBAg8L7VFxsDeAg8hpenELdRCf_6Q2HNeAzdDc-AYoHHNilvf9_J9S30ccsoIuQfmlkUg-ZrecYZBiE4Su_pSVU6UpQ2Yh8wM_fLy3ffUEcBIjSGlGyu7hmN2arY_CzsKMprbyooxdY4daLLg" />
+                        <img class="w-10 h-10 rounded-full border-2 border-white object-cover"
+                            data-alt="A close-up of fresh, brightly colored folded towels stacked neatly, with a soft blur indicating high-end domestic lifestyle. Bright natural light, crisp focus."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDir9i3cy4528EFCOY3wI_q8boMDTYvG3HKPYgBGVpdWxt1cnN96KNhQP2JXiAB9Vafr2yZCZbcRRqy57pNQuM6TNg0bpBucpWYl3cS-gy7ncsRvelxvECSUExxaAe8IP1Qg1XDLxbRWnVE-Lsiathytw5-MzJGe3Kppqfy4LQj6Y0rPxuk2YTU77S6-Yb0_Z52RSrIyT9IY3GuCR3l6NaBGevP91TTCzCQIV8yXEE4dGGHzCP0ZONTRA" />
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="flex text-[#F59E0B]">
+                            <span class="material-symbols-outlined icon-fill text-[16px]">star</span>
+                            <span class="material-symbols-outlined icon-fill text-[16px]">star</span>
+                            <span class="material-symbols-outlined icon-fill text-[16px]">star</span>
+                            <span class="material-symbols-outlined icon-fill text-[16px]">star</span>
+                            <span class="material-symbols-outlined icon-fill text-[16px]">star</span>
+                        </div>
+                        <span class="font-label-bold text-label-bold text-on-surface-variant">Dipercaya 500+
+                            Pelanggan</span>
+                    </div>
+                </div>
+            </div>
+            <div class="relative w-full h-[500px] lg:h-[600px] rounded-[32px] overflow-hidden soft-shadow group">
+                <div
+                    class="absolute inset-0 bg-brand-plum/10 group-hover:bg-transparent transition-all duration-500 z-10">
+                </div>
+                <img class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                    data-alt="A high-end, bright, and modern laundry facility interior. Extremely clean and minimalist aesthetic. Neatly folded white and pastel clothes stacked on a light oak wooden table. Soft natural light streaming through a window. The overall color palette features crisp whites, soft dusty rose, and warm wood tones. Professional interior lifestyle photography, 8k resolution, photorealistic."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDn7v2gWx9twYu5I75Pt2sxs7y90Sp24-P_daz3wLicG-OTjvaADGqhPZDfFH--MhNemFQiDMbXbYGwu9qsy1NLW6K4bLU9EHvHL-aGuS44bAQ5CAQHB2va8_JexZyIcEYGgGY0ryhf6ekhPnrRQgg-csceEyHY_IezwC8xEvgt-4ByVTkobVGdlTvL-g3w55nFuRkA4fNo9YcgktfNDy_IY-Xmvyj9FwxCkX5OyPBggpOq9xm1nfIlvA" />
+                <!-- Floating Element -->
+                <div
+                    class="absolute bottom-8 left-8 bg-white/90 backdrop-blur-md p-4 rounded-2xl soft-shadow z-20 flex items-center gap-4 border border-white/50">
+                    <div class="bg-primary-container p-3 rounded-xl text-on-primary-container">
+                        <span class="material-symbols-outlined icon-fill">iron</span>
+                    </div>
+                    <div>
+                        <p class="font-label-bold text-label-bold text-on-surface-variant">Layanan Spesial</p>
+                        <p class="font-headline-md text-headline-md text-brand-plum text-sm mt-1">Setrika Uap Premium
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services & Calculator Section -->
+    <section class="py-xxl bg-surface-container-low px-container-margin" id="layanan">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-xl">
+                <h2 class="font-headline-md text-headline-md md:text-[36px] md:font-bold text-on-surface mb-4">Layanan
+                    &amp; Estimasi Harga</h2>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Pilih layanan yang sesuai
+                    dengan kebutuhan Anda. Transparan, terjangkau, dan selalu mengutamakan kualitas.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-lg mb-xl">
+                <!-- Service Cards Bento Style -->
+                <div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-md">
+                    <!-- Kiloan -->
+                    <div
+                        class="bg-white p-lg rounded-2xl border border-surface-variant soft-shadow flex flex-col justify-between hover:-translate-y-1 transition-transform">
+                        <div>
+                            <div
+                                class="w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center text-on-primary-fixed mb-4">
+                                <span class="material-symbols-outlined">local_laundry_service</span>
+                            </div>
+                            <h3 class="font-headline-md text-headline-md text-on-surface mb-2">Cuci Kiloan</h3>
+                            <ul class="font-body-sm text-body-sm text-on-surface-variant space-y-2 mb-4">
+                                <li class="flex justify-between border-b border-surface-variant pb-2"><span>Reguler (2-3
+                                        Hari)</span> <span class="font-bold text-brand-plum">Rp 8.000/kg</span></li>
+                                <li class="flex justify-between border-b border-surface-variant pb-2"><span>Express (1
+                                        Hari)</span> <span class="font-bold text-brand-plum">Rp 12.000/kg</span></li>
+                                <li class="flex justify-between pt-1"><span>Setrika Saja</span> <span
+                                        class="font-bold text-brand-plum">Rp 6.000/kg</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Satuan -->
+                    <div
+                        class="bg-white p-lg rounded-2xl border border-surface-variant soft-shadow flex flex-col justify-between hover:-translate-y-1 transition-transform">
+                        <div>
+                            <div
+                                class="w-12 h-12 bg-secondary-fixed rounded-full flex items-center justify-center text-on-secondary-fixed mb-4">
+                                <span class="material-symbols-outlined">checkroom</span>
+                            </div>
+                            <h3 class="font-headline-md text-headline-md text-on-surface mb-2">Pakaian &amp; Jas Satuan
+                            </h3>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Perawatan khusus untuk
+                                pakaian berbahan halus, kemeja kerja, gaun, dan jas.</p>
+                            <div class="mt-auto">
+                                <span class="text-xs text-on-surface-variant uppercase tracking-wider">Mulai Dari</span>
+                                <p class="font-headline-md text-headline-md text-brand-plum">Rp 15.000<span
+                                        class="text-sm font-normal text-on-surface-variant">/pcs</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gorden & Karpet -->
+                    <div
+                        class="bg-white p-lg rounded-2xl border border-surface-variant soft-shadow flex flex-col justify-between hover:-translate-y-1 transition-transform">
+                        <div>
+                            <div
+                                class="w-12 h-12 bg-surface-container-highest rounded-full flex items-center justify-center text-on-surface mb-4">
+                                <span class="material-symbols-outlined">curtains</span>
+                            </div>
+                            <h3 class="font-headline-md text-headline-md text-on-surface mb-2">Gorden &amp; Karpet</h3>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Pembersihan mendalam untuk
+                                debu dan noda membandel pada tekstil rumah.</p>
+                            <div class="mt-auto">
+                                <span class="text-xs text-on-surface-variant uppercase tracking-wider">Mulai Dari</span>
+                                <p class="font-headline-md text-headline-md text-brand-plum">Rp 20.000<span
+                                        class="text-sm font-normal text-on-surface-variant">/meter</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Selimut / Bedcover -->
+                    <div
+                        class="bg-white p-lg rounded-2xl border border-surface-variant soft-shadow flex flex-col justify-between hover:-translate-y-1 transition-transform">
+                        <div>
+                            <div
+                                class="w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center text-on-primary-fixed mb-4">
+                                <span class="material-symbols-outlined">bed</span>
+                            </div>
+                            <h3 class="font-headline-md text-headline-md text-on-surface mb-2">Selimut &amp; Bedcover
+                            </h3>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Cuci bersih dan wangi
+                                anti-tungau untuk tidur yang lebih nyenyak.</p>
+                            <div class="mt-auto">
+                                <span class="text-xs text-on-surface-variant uppercase tracking-wider">Mulai Dari</span>
+                                <p class="font-headline-md text-headline-md text-brand-plum">Rp 35.000<span
+                                        class="text-sm font-normal text-on-surface-variant">/pcs</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Calculator Widget -->
+                <div class="bg-brand-plum rounded-3xl p-lg text-white shadow-xl relative overflow-hidden flex flex-col">
+                    <div
+                        class="absolute -top-24 -right-24 w-64 h-64 bg-white opacity-5 rounded-full blur-2xl pointer-events-none">
+                    </div>
+                    <h3 class="font-headline-md text-headline-md mb-6 relative z-10 flex items-center gap-2">
+                        <span class="material-symbols-outlined">calculate</span>
+                        Hitung Estimasi
+                    </h3>
+                    <div class="space-y-4 relative z-10 flex-grow">
+                        <div>
+                            <label class="block font-label-bold text-label-bold mb-2 text-primary-fixed-dim">Jenis
+                                Layanan</label>
+                            <select
+                                class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand-rose appearance-none"
+                                id="calc-service">
+                                <option class="text-on-surface" value="8000">Cuci Kiloan Reguler (Rp 8.000/kg)</option>
+                                <option class="text-on-surface" value="12000">Cuci Kiloan Express (Rp 12.000/kg)
+                                </option>
+                                <option class="text-on-surface" value="6000">Setrika Saja (Rp 6.000/kg)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block font-label-bold text-label-bold mb-2 text-primary-fixed-dim">Perkiraan
+                                Berat (Kg)</label>
+                            <div
+                                class="flex items-center gap-2 bg-white/10 border border-white/20 rounded-lg px-4 py-1">
+                                <input
+                                    class="w-full bg-transparent border-none text-white focus:ring-0 text-lg py-2 pl-0"
+                                    id="calc-weight" min="1" type="number" value="3" />
+                                <span class="text-white/60 font-label-bold">Kg</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-white/20 relative z-10">
+                        <p class="font-label-bold text-label-bold text-primary-fixed-dim mb-1 uppercase tracking-wider">
+                            Total Estimasi</p>
+                        <p class="font-headline-lg-mobile text-headline-lg-mobile font-bold">Rp <span
+                                id="calc-total">24.000</span></p>
+                        <p class="text-xs text-white/60 mt-2">*Harga final ditentukan saat penimbangan aktual</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pickup Form & Location -->
+    <section class="py-xxl px-container-margin" id="pesan">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-xxxl">
+            <!-- Form -->
+            <div class="bg-white rounded-3xl p-lg md:p-xl border border-surface-variant soft-shadow">
+                <div class="mb-8">
+                    <span
+                        class="inline-block bg-primary-container text-on-primary-container px-3 py-1 rounded-full font-label-bold text-label-bold mb-4">Gratis
+                        Antar-Jemput</span>
+                    <h2 class="font-headline-md text-headline-md md:text-[32px] md:font-bold text-on-surface mb-2">Pesan
+                        Layanan</h2>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">Isi form di bawah ini untuk mengatur
+                        jadwal penjemputan cucian Anda di area Serpong Utara.</p>
+                </div>
+                <form class="space-y-5">
+                    <div>
+                        <label class="block font-label-bold text-label-bold text-on-surface mb-1">Nama Lengkap</label>
+                        <input
+                            class="w-full border-b border-surface-variant bg-transparent px-0 py-2 focus:ring-0 focus:border-brand-plum text-on-surface transition-colors"
+                            placeholder="Masukkan nama Anda" type="text" />
+                    </div>
+                    <div>
+                        <label class="block font-label-bold text-label-bold text-on-surface mb-1">Nomor WhatsApp</label>
+                        <input
+                            class="w-full border-b border-surface-variant bg-transparent px-0 py-2 focus:ring-0 focus:border-brand-plum text-on-surface transition-colors"
+                            placeholder="Contoh: 0812xxxx" type="tel" />
+                    </div>
+                    <div>
+                        <label class="block font-label-bold text-label-bold text-on-surface mb-1">Alamat / Titik
+                            Jemput</label>
+                        <textarea
+                            class="w-full border-b border-surface-variant bg-transparent px-0 py-2 focus:ring-0 focus:border-brand-plum text-on-surface transition-colors resize-none"
+                            placeholder="Detail alamat atau patokan" rows="2"></textarea>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block font-label-bold text-label-bold text-on-surface mb-1">Jenis
+                                Layanan</label>
+                            <select
+                                class="w-full border-b border-surface-variant bg-transparent px-0 py-2 focus:ring-0 focus:border-brand-plum text-on-surface transition-colors">
+                                <option>Cuci Kiloan</option>
+                                <option>Satuan / Jas</option>
+                                <option>Bedcover / Karpet</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block font-label-bold text-label-bold text-on-surface mb-1">Jadwal
+                                Jemput</label>
+                            <input
+                                class="w-full border-b border-surface-variant bg-transparent px-0 py-2 focus:ring-0 focus:border-brand-plum text-on-surface transition-colors"
+                                type="datetime-local" />
+                        </div>
+                    </div>
+                    <button
+                        class="w-full mt-6 bg-[#25D366] text-white py-4 rounded-xl font-button-text text-button-text flex justify-center items-center gap-2 hover:bg-[#20bd5a] transition-colors soft-shadow"
+                        type="button">
+                        <svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z">
+                            </path>
+                        </svg>
+                        Kirim Pesanan ke WhatsApp
+                    </button>
+                </form>
+            </div>
+            <!-- Location & Contact Info -->
+            <div class="flex flex-col justify-center gap-8" id="area">
+                <div>
+                    <h2 class="font-headline-md text-headline-md md:text-[32px] md:font-bold text-on-surface mb-4">Area
+                        Layanan &amp; Workshop</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">Kunjungi workshop kami atau
+                        manfaatkan layanan antar-jemput gratis di wilayah Serpong Utara dan sekitarnya.</p>
+                    <div class="flex items-start gap-4 mb-6 p-4 bg-surface-container-low rounded-2xl">
+                        <span class="material-symbols-outlined text-brand-plum mt-1">location_on</span>
+                        <div>
+                            <h4 class="font-label-bold text-label-bold text-on-surface mb-1">Alamat Workshop</h4>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant">Jl. Susbaster RT.004/005, Pd.
+                                Jagung Timur,<br />Serpong Utara, Tangerang Selatan - Banten</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 mb-6 p-4 bg-surface-container-low rounded-2xl">
+                        <span class="material-symbols-outlined text-brand-plum mt-1">support_agent</span>
+                        <div>
+                            <h4 class="font-label-bold text-label-bold text-on-surface mb-1">Kontak Admin</h4>
+                            <div class="flex flex-col gap-1 mt-1">
+                                <a class="font-body-sm text-body-sm font-semibold text-brand-plum hover:underline"
+                                    href="#">Rose: 0831-5362-3548</a>
+                                <a class="font-body-sm text-body-sm font-semibold text-brand-plum hover:underline"
+                                    href="#">Aden: 0838-0684-2883</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Map Visual placeholder -->
+                <div class="w-full h-64 bg-surface-variant rounded-2xl overflow-hidden relative border border-surface-variant"
+                    data-location="Serpong Utara, Tangerang Selatan" style="">
+                    <img class="w-full h-full object-cover"
+                        data-alt="A stylized, modern flat-design map illustration of Serpong Utara, Tangerang Selatan. Clean lines, soft professional color palette using light greys, dusty rose, and deep plum accents for roads and pins. Minimalist, high-end vector art style."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTpfH_QujfTYnbcuwmWuxgKunUeNGXxOOBBoxEQ6tXx14WDg2Bj9Ho18nm8ruwIXiMCPCEqq8Am2H35C4GJtwUYH-ytvxs3NQ7P6b0yyYb_kQ8AKBHm6-AltcW8NTqsHlkfTfZtX3C3CrRcaOioMpl7Q6CzwaJL0O1iZ5CGDZNkFmvhQnqX1WD4TxNoNZ8os1AjVVOQsp07-5yDU2rJ6PI4kl27lfimpD-yFLEpIL_Yne8q7O0YS7O-w" />
+                    <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                        <div class="bg-white p-2 rounded-full shadow-lg animate-bounce">
+                            <span class="material-symbols-outlined text-brand-plum icon-fill">location_on</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Status Checker Section -->
+    <section class="py-xxl bg-brand-plum text-white relative overflow-hidden" id="status">
+        <!-- Abstract geometric bg pattern -->
+        <div class="absolute inset-0 opacity-10"
+            style="background-image: radial-gradient(#ffffff 2px, transparent 2px); background-size: 32px 32px;"></div>
+        <div class="max-w-3xl mx-auto px-container-margin relative z-10 text-center">
+            <span class="material-symbols-outlined text-[48px] text-brand-rose mb-4">search_check</span>
+            <h2 class="font-headline-md text-headline-md md:text-[36px] md:font-bold mb-4">Lacak Status Cucian Anda</h2>
+            <p class="font-body-lg text-body-lg text-white/80 mb-8">Masukkan nomor nota atau nomor handphone yang
+                terdaftar untuk melihat progres pengerjaan secara real-time.</p>
+            <form class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
+                <input
+                    class="flex-grow rounded-full px-6 py-4 bg-white/10 border border-white/30 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-brand-rose focus:bg-white/20 transition-all"
+                    placeholder="Masukkan Nomor Nota / No. HP" type="text" />
+                <button
+                    class="bg-brand-rose text-brand-plum px-8 py-4 rounded-full font-button-text text-button-text hover:bg-white transition-colors whitespace-nowrap"
+                    type="button">
+                    Cek Status
+                </button>
+            </form>
+        </div>
+    </section>
+    <!-- Footer (Based on JSON) -->
+    <footer class="bg-surface-container dark:bg-surface-container-low full-width">
+        <div
+            class="w-full px-container-margin py-xl flex flex-col md:flex-row justify-between items-start gap-lg max-w-7xl mx-auto border-b border-surface-variant pb-8 mb-8">
+            <div class="flex flex-col gap-4 max-w-xs">
+                <div class="flex items-center gap-sm">
+                    <img alt="Laundry Rose Logo"
+                        class="h-8 w-8 object-contain rounded-full border border-surface-variant"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYhNNAt2iWzgaMXFzFtddGKrXS5VzyChImhU50jDKLTmvtUBbaUb9XBW1hw0cuTzqe56jgA-XmzMZ_9BiypLsniAqop32GX81mTU6IVkcVo9t0FNph5AK1_UpPU2PHPL_lhfI-DP9Mac8DZCoQPIBDEWtzIfCoUzpqCWU_On-Gka5D9NtQdf23AQWOUY3-B3uUkx1mYZsUXGh3dVVA8l8UtMPmNg-0hebYyNDut109iN-wcszyqJkpRQ" />
+                    <span
+                        class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim">Laundry
+                        Rose</span>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Solusi cuci bersih, rapi, dan wangi untuk
+                    kebutuhan harian Anda. Melayani dengan hati sepenuh hati.</p>
+            </div>
+            <div class="flex flex-col gap-2">
+                <h4 class="font-label-bold text-label-bold text-on-surface mb-2">Informasi</h4>
+                <span class="text-on-surface-variant dark:text-on-surface-variant font-body-sm text-body-sm">Jam
+                    Operasional: 08:00 - 20:00</span>
+                <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors cursor-pointer font-body-sm text-body-sm"
+                    href="#">Lokasi Workshop</a>
+            </div>
+            <div class="flex flex-col gap-2">
+                <h4 class="font-label-bold text-label-bold text-on-surface mb-2">Sosial Media</h4>
+                <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors cursor-pointer font-body-sm text-body-sm flex items-center gap-2"
+                    href="#">
+                    Instagram
+                </a>
+                <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors cursor-pointer font-body-sm text-body-sm flex items-center gap-2"
+                    href="#">
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-container-margin pb-xl text-center md:text-left">
+            <p class="font-body-sm text-body-sm text-on-surface-variant">© 2024 Laundry Rose. Solusi Cuci Bersih &amp;
+                Wangi.</p>
+        </div>
+    </footer>
+    <script>
+        // Simple Calculator Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const serviceSelect = document.getElementById('calc-service');
+            const weightInput = document.getElementById('calc-weight');
+            const totalDisplay = document.getElementById('calc-total');
+
+            function calculateTotal() {
+                const pricePerKg = parseInt(serviceSelect.value);
+                const weight = parseFloat(weightInput.value) || 0;
+                const total = pricePerKg * weight;
+                totalDisplay.textContent = total.toLocaleString('id-ID');
+            }
+
+            serviceSelect.addEventListener('change', calculateTotal);
+            weightInput.addEventListener('input', calculateTotal);
+
+            // Header scroll effect
+            const header = document.getElementById('main-header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 20) {
+                    header.classList.add('shadow-md');
+                } else {
+                    header.classList.remove('shadow-md');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

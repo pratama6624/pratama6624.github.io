@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Projects - One App Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="/css/project.css">
+    <script src="/js/project.js"></script>
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="/js/home.js"></script>
+</head>
+
+<body class="font-body-md text-body-md text-on-surface antialiased pt-32 pb-16">
+    <!-- TopNavBar -->
+    <nav
+        class="fixed top-0 w-full z-50 bg-surface/85 dark:bg-inverse-surface/85 backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_4px_30px_rgba(0,0,0,0.05)]">
+        <div
+            class="flex justify-between items-center h-16 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+            <!-- Kiri: Brand Name -->
+            <a href="index.html"
+                class="font-headline-sm text-base md:text-headline-sm font-bold tracking-tight text-on-surface dark:text-inverse-on-surface hover:opacity-80 transition-opacity whitespace-nowrap">
+                One App Studio
+            </a>
+
+            <!-- Kanan: Language Switcher -->
+            <div
+                class="flex items-center gap-2 bg-surface-container rounded-full p-1 border border-outline-variant/30 text-xs font-semibold">
+                <button id="btn-en" onclick="setLanguage('en')"
+                    class="px-3 py-1 rounded-full bg-primary-container text-white transition-all">EN</button>
+                <button id="btn-id" onclick="setLanguage('id')"
+                    class="px-3 py-1 rounded-full text-on-surface-variant hover:text-on-surface transition-all">ID</button>
+            </div>
+        </div>
+    </nav>
+    <main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12">
+        <!-- Header Section -->
+        <div class="mb-16 flex flex-col items-start gap-4">
+            <a href="projects.html"
+                class="reveal delay-100 inline-flex items-center gap-2 text-primary font-label-md text-label-md hover:opacity-80 transition-opacity group"
+                href="#">
+                <span
+                    class="material-symbols-outlined text-sm group-hover:-translate-x-1 transition-transform">arrow_back</span>
+                <span data-en="Back to Work" data-id="Kembali Bekerja">Back to Work</span>
+            </a>
+            <h1 class="reveal delay-200 font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mt-4"
+                data-en="Projects in Progress" data-id="Proyek Sedang Berlangsung">
+                Projects in Progress</h1>
+            <p class="reveal delay-300 font-body-lg text-body-lg text-secondary max-w-2xl" data-en="A glimpse into the current experiments,
+                architectural builds, and ongoing development work."
+                data-id="Sekilas tentang eksperimen terkini, pembangunan arsitektur, dan pekerjaan pengembangan yang sedang berlangsung.">
+                A glimpse into the current experiments,
+                architectural builds, and ongoing development work.</p>
+        </div>
+        <!-- Bento Grid Projects -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-bento-gap">
+            <!-- Project 1 -->
+            <div class="reveal delay-100 glass-card p-6 flex flex-col h-full gap-6">
+                <div class="flex justify-between items-start">
+                    <div class="w-16 h-16 rounded-full overflow-hidden border border-outline-variant/20">
+                        <img class="w-full h-full object-cover"
+                            data-alt="A highly detailed close-up shot of a sophisticated macOS application icon featuring a 3D rendered crystal sphere glowing with a soft blue internal light, set against a pristine, minimalist light-grey background. The aesthetic is ultra-modern, crisp, and high-end, matching Apple's design language."
+                            src="/assets/poas.png">
+                    </div>
+                    <div class="bg-surface-variant px-3 py-1 rounded-full flex items-center gap-2">
+                        <div class="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
+                        <span class="font-label-sm text-label-sm text-on-surface-variant" data-en="In Active Dev"
+                            data-id="Sedang dalam pengembangan.">In Active Dev</span>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="font-headline-md text-headline-md text-on-surface mb-2">Dentalities</h2>
+                    <p class="font-body-md text-body-md text-secondary"
+                        data-en="Shop on Dentalities to find specialized dental supplies, browse curated top brands, and unlock exclusive bundle deals with a secure and streamlined checkout process tailored for clinics."
+                        data-id="Berbelanja di Dentalities untuk menemukan perlengkapan gigi khusus, menelusuri merek ternama yang dikurasi, dan mendapatkan penawaran paket eksklusif dengan proses pembayaran yang aman dan efisien yang disesuaikan untuk klinik.">
+                        Shop on Dentalities to find specialized dental supplies, browse curated top brands, and unlock
+                        exclusive bundle deals with a secure and streamlined checkout process tailored for clinics.</p>
+                </div>
+                <div class="mt-auto pt-4 border-t border-outline-variant/20">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="font-label-sm text-label-sm text-secondary" data-en="Progress: UI / UX"
+                            data-id="Kemajuan: UI / UX">Progress: UI / UX</span>
+                        <span class="font-label-sm text-label-sm text-primary">9%</span>
+                    </div>
+                    <div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+                        <div class="h-full bg-primary rounded-full w-[9%]"></div>
+                    </div>
+                </div>
+                <!-- STATUS = DEAL (Diselipkan di Sini) -->
+                <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                    <span class="text-sm text-gray-500 font-medium">Status</span>
+                    <span
+                        class="text-sm font-bold text-emerald-600 bg-emerald-50 px-2.5 py-0.5 rounded-full" data-en="Deal" data-id="Kesepakatan">Deal</span>
+                </div>
+                <div class="flex flex-wrap gap-x-6 gap-y-2 mb-4 pt-4 border-t border-outline-variant/20">
+                    <div class="flex flex-col">
+                        <span class="font-label-sm text-label-sm text-on-surface-variant/80" data-en="Timeline"
+                            data-id="Waktu Pengerjaan">Timeline</span><br>
+                        <span class="font-label-md text-label-md text-on-surface"
+                            data-en="18 August 2026 - 2 October 2026" data-id="18 Agustus 2026 - 2 Oktober 2026">18
+                            August 2026 - 2 October 2026</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-label-sm text-label-sm text-on-surface-variant/80" data-en="Budget"
+                            data-id="Anggaran">Budget</span><br>
+                        <span class="font-label-md text-label-md text-on-surface" data-en="Undisclosed"
+                            data-id="Tidak diungkapkan">Undisclosed</span>
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-2">
+                    <span class="bg-[#E5E5EA] text-[#1D1D1F] px-3 py-1 rounded-full font-label-sm text-label-sm">Mobile
+                        iOS</span>
+                    <span
+                        class="bg-[#E5E5EA] text-[#1D1D1F] px-3 py-1 rounded-full font-label-sm text-label-sm">Flutter</span>
+                    <span
+                        class="bg-[#E5E5EA] text-[#1D1D1F] px-3 py-1 rounded-full font-label-sm text-label-sm">Firebase</span>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="reveal delay-200 glass-card p-6 flex flex-col h-full gap-6">
+                <div class="flex justify-between items-start">
+                    <div class="w-16 h-16 rounded-full overflow-hidden border border-outline-variant/20">
+                        <img class="w-full h-full object-cover"
+                            data-alt="A highly detailed close-up shot of a sophisticated macOS application icon featuring a 3D rendered crystal sphere glowing with a soft blue internal light, set against a pristine, minimalist light-grey background. The aesthetic is ultra-modern, crisp, and high-end, matching Apple's design language."
+                            src="/assets/poas.png">
+                    </div>
+                    <div class="bg-surface-variant px-3 py-1 rounded-full flex items-center gap-2">
+                        <div class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></div>
+                        <span class="font-label-sm text-label-sm text-on-surface-variant" data-en="Offered" data-id="Ditawarkan">Offered</span>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="font-headline-md text-headline-md text-on-surface mb-2"><a href="example.html">Laundry Rose</a></h2>
+                    <p class="font-body-md text-body-md text-secondary" data-en="Laundry Rose is a modern local laundry service in Serpong Utara offering reliable, fresh, and hassle-free care for clothes, shoes, carpets, and bedding with convenient free pickup and delivery." data-id="Laundry Rose adalah layanan laundry lokal modern di Serpong Utara yang menawarkan perawatan pakaian, sepatu, karpet, dan selimut yang andal, segar, dan bebas repot dengan penjemputan dan pengantaran gratis yang nyaman.">Laundry Rose is a modern local laundry service in Serpong Utara offering reliable, fresh, and hassle-free care for clothes, shoes, carpets, and bedding with convenient free pickup and delivery.</p>
+                </div>
+                <div class="mt-auto pt-4 border-t border-outline-variant/20">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="font-label-sm text-label-sm text-secondary">Progress: -</span>
+                        <span class="font-label-sm text-label-sm text-tertiary-container">0%</span>
+                    </div>
+                    <div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+                        <div class="h-full bg-tertiary-container rounded-full w-[0%]"></div>
+                    </div>
+                </div>
+                <!-- STATUS = DEAL (Diselipkan di Sini) -->
+                <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                    <span class="text-sm text-gray-500 font-medium">Status</span>
+                    <span
+                        class="text-sm font-bold text-red-600 bg-orange-50 px-2.5 py-0.5 rounded-full" data-en="Offered" data-id="Ditawarkan">Offered</span>
+                </div>
+                <div class="flex flex-wrap gap-x-6 gap-y-2 mb-4 pt-4 border-t border-outline-variant/20">
+                    <div class="flex flex-col">
+                        <span class="font-label-sm text-label-sm text-on-surface-variant/80">Timeline</span><br>
+                        <span class="font-label-md text-label-md text-on-surface" data-en="-" data-id="-">-</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-label-sm text-label-sm text-on-surface-variant/80">Budget</span><br>
+                        <span class="font-label-md text-label-md text-on-surface" data-en="IDR. -" data-id="RP. -">IDR. -</span>
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-2">
+                    <span
+                        class="bg-[#E5E5EA] text-[#1D1D1F] px-3 py-1 rounded-full font-label-sm text-label-sm" data-en="Web Application" data-id="Aplikasi Berbasis Web">Web Application</span>
+                    <span
+                        class="bg-[#E5E5EA] text-[#1D1D1F] px-3 py-1 rounded-full font-label-sm text-label-sm">PHP Codeigniter 4</span>
+                        <span
+                        class="bg-[#E5E5EA] text-[#1D1D1F] px-3 py-1 rounded-full font-label-sm text-label-sm">MySQL</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Contact Section -->
+    <section class="reveal py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center"
+        id="contact">
+        <h2 class="reveal delay-100 font-headline-md text-headline-md text-on-surface mb-8"
+            data-en="Let's Build Something Great" data-id="Mari Bangun Sesuatu yang Luar Biasa">Let's Build
+            Something Great
+        </h2>
+        <p class="reveal delay-200 font-body-md text-body-md text-on-surface-variant max-w-md mb-8 mx-auto text-center"
+            data-en="Have an idea, project, or opportunity in mind? Feel free to reach out and let's craft seamless experiences together."
+            data-id="Punya ide, proyek, atau peluang? Jangan ragu untuk menghubungi dan mari kita ciptakan pengalaman yang luar biasa bersama.">
+            Have an idea, project, or opportunity in mind? Feel free to reach out and let's craft seamless
+            experiences
+            together.
+        </p>
+        <div class="w-full flex justify-center items-center py-2 mt-3 mb-12 px-4">
+            <div class="max-w-xl w-full overflow-hidden my-0 py-0">
+                <img src="/assets/Appleecosystemcropped.png" alt="Apple Ecosystem Devices"
+                    class="w-full h-auto object-contain mx-auto block drop-shadow-md transition-transform duration-300 hover:scale-[1.02]" />
+            </div>
+        </div>
+        <div class="flex flex-wrap justify-center gap-4">
+            <!-- Hire Me Button (Primary CTA di Paling Depan) -->
+            <a href="/hireme.html"
+                class="reveal px-6 py-3 rounded-full flex items-center gap-2 bg-primary-container hover:bg-primary text-white transition-all shadow-md hover:shadow-lg active:scale-95">
+                <span class="material-symbols-outlined text-white" data-icon="handshake">handshake</span>
+                <span class="font-label-md text-label-md font-semibold text-white" data-en="Hire Me"
+                    data-id="Sewa Saya">Hire Me</span>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/pratama6624"
+                class="reveal glass-panel px-6 py-3 rounded-full flex items-center gap-2 hover:bg-surface-container transition-colors">
+                <span class="material-symbols-outlined text-on-surface" data-icon="code">code</span>
+                <span class="font-label-md text-label-md text-on-surface">GitHub</span>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/kukuhnurpratama-iosdeveloper"
+                class="reveal glass-panel px-6 py-3 rounded-full flex items-center gap-2 hover:bg-surface-container transition-colors">
+                <span class="material-symbols-outlined text-on-surface" data-icon="work">work</span>
+                <span class="font-label-md text-label-md text-on-surface">LinkedIn</span>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:scyoung6624@gmail.com"
+                class="reveal glass-panel px-6 py-3 rounded-full flex items-center gap-2 hover:bg-surface-container transition-colors">
+                <span class="material-symbols-outlined text-on-surface" data-icon="mail">mail</span>
+                <span class="font-label-md text-label-md text-on-surface">Email</span>
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/6287823019956?text=Halo%20Pratama,%20saya%20lihat%20portofolio%20kamu%20dan%20tertarik%20untuk%20hire/diskusi%20proyek."
+                class="reveal glass-panel px-6 py-3 rounded-full flex items-center gap-2 hover:bg-surface-container transition-colors">
+                <svg class="w-5 h-5 fill-current text-on-surface" viewBox="0 0 24 24">
+                    <path
+                        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.199 1.624zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                </svg>
+                <span class="font-label-md text-label-md text-on-surface">WhatsApp</span>
+            </a>
+        </div>
+    </section>
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>

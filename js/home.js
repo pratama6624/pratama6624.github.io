@@ -110,46 +110,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 });
 
-// Typewriter Animation
-const words = ["Apple Developer", "Fullstack Web Developer"];
-let wordIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
-
-const typeSpeed = 100;    // Kecepatan mengetik (ms)
-const deleteSpeed = 50;   // Kecepatan menghapus (ms)
-const pauseTime = 700;   // Waktu jeda saat teks selesai diketik (ms)
-
-function typeEffect() {
-    const typewriterElement = document.getElementById("typewriter");
-    if (!typewriterElement) return; // Mencegah error jika elemen belum tersedia
-
-    const currentWord = words[wordIndex];
-
-    if (isDeleting) {
-        typewriterElement.textContent = currentWord.substring(0, charIndex - 1);
-        charIndex--;
-    } else {
-        typewriterElement.textContent = currentWord.substring(0, charIndex + 1);
-        charIndex++;
-    }
-
-    let currentSpeed = isDeleting ? deleteSpeed : typeSpeed;
-
-    if (!isDeleting && charIndex === currentWord.length) {
-        currentSpeed = pauseTime;
-        isDeleting = true;
-    } else if (isDeleting && charIndex === 0) {
-        isDeleting = false;
-        wordIndex = (wordIndex + 1) % words.length;
-        currentSpeed = 500;
-    }
-
-    setTimeout(typeEffect, currentSpeed);
-}
-
-document.addEventListener("DOMContentLoaded", typeEffect);
-
 const titles = {
     en: "Crafting High-Performance iOS & Web Apps.",
     id: "Membangun Aplikasi iOS & Web Berkinerja Tinggi."

@@ -22,15 +22,17 @@
 </head>
 
 <body
-    class="bg-background text-on-background font-body-lg antialiased selection:bg-primary-container selection:text-white">
-    <!-- TopNavBar -->
-    <nav
-        class="fixed top-0 w-full z-50 bg-surface/85 dark:bg-inverse-surface/85 backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_4px_30px_rgba(0,0,0,0.05)]">
-        <div
-            class="flex justify-between items-center h-16 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-            <!-- Kiri: Brand Name -->
+    class="bg-background text-on-background font-body-lg antialiased selection:bg-primary-container selection:text-white bg-[url('../../assets/bg.png')] bg-cover bg-center bg-no-repeat bg-fixed text-on-background font-body-lg antialiased">
+    <!-- TopNavBar yang dirapikan -->
+    <!-- Wrapper Header Fixed di Paling Atas (Full Width) -->
+    <header
+        class="fixed top-0 left-0 right-0 z-50 pt-4 pb-4 bg-ffffff backdrop-blur-xl border-b border-outline-variant/10">
+        <!-- Inner Container: Tetap melayang di tengah (Floating Pill Look) -->
+        <nav
+            class="w-[90%] max-w-container-max mx-auto rounded-full bg-surface/90 border border-outline-variant/30 shadow-[0_4px_30px_rgba(0,0,0,0.05)] flex justify-between items-center px-8 py-3 transition-all duration-300 ease-in-out">
+
             <a href="../../index.html"
-                class="font-headline-sm text-base md:text-headline-sm font-bold tracking-tight text-on-surface dark:text-inverse-on-surface hover:opacity-80 transition-opacity whitespace-nowrap">
+                class="font-headline-sm text-base md:text-headline-sm font-bold tracking-tight text-on-surface hover:opacity-80 transition-opacity">
                 One App Studio
             </a>
 
@@ -42,8 +44,9 @@
                 <button id="btn-id" onclick="setLanguage('id')"
                     class="px-3 py-1 rounded-full text-on-surface-variant hover:text-on-surface transition-all">ID</button>
             </div>
-        </div>
-    </nav>
+
+        </nav>
+    </header>
     <main
         class="pt-[150px] pb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto flex flex-col gap-section-gap">
         <!-- Hero Section -->

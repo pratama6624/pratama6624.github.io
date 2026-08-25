@@ -115,6 +115,22 @@ const titles = {
     id: "Membangun Aplikasi iOS & Web Berkinerja Tinggi."
 };
 
-// Ambil bahasa yang tersimpan saat ini
-const currentLang = localStorage.getItem('selectedLanguage') || 'en';
+function getPreferredLanguage() {
+    // 1. Cek pilihan manual user (jika pernah ganti via tombol switcher)
+    const savedLang = localStorage.getItem('selectedLanguage');
+    if (savedLang) return savedLang;
+
+    // 2. Cek bahasa bawaan browser/OS user
+    const browserLang = navigator.language || navigator.userLanguage || 'en';
+    
+    // Jika bahasa diawali dengan 'id' (misal: 'id', 'id-ID'), gunakan 'id'. Selain itu 'en'
+    const detectedLang = browserLang.toLowerCase().startsWith('id') ? 'id' : 'en';
+
+    // 3. Simpan sebagai pilihan awal
+    localStorage.setItem('selectedLanguage', detectedLang);
+    return detectedLang;
+}
+
+// Eksekusi langsung secara instan (Synchronous)
+const currentLang = getPreferredLanguage();
 const textToType = titles[currentLang];

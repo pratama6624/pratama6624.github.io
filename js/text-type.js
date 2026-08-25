@@ -50,7 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
     new TextType(target, {
       texts: [
         "Apple Developer",
-        "Fullstack Web Developer"
+        "Mobile Developer",
+        "Web Developer"
       ],
       typingSpeed: 75,
       deletingSpeed: 50,
